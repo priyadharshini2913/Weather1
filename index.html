@@ -10,18 +10,18 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="enter city name" spellcheck="false">
-            <button><img src="images/search.png"></button>
+            <button><img src="search.png"></button>
         </div>
         <div class="error">
             <p>Invalid city name</p>
         </div>
         <div class="weather">
-            <img src="images/rain.png" class="weatherIcon">
+            <img src="rain.png" class="weatherIcon">
             <h1 class="temp">22°c</h1>
             <h2 class="city">new york</h2>
             <div class="details">
             <div class="col">
-                <img src="images/humidity.png">
+                <img src="humidity.png">
                 <div>
                     <p class="humidity">50%</p>
                     <p>Humidity</p>
@@ -29,7 +29,7 @@
             
             </div>
             <div class="col">
-                <img src="images/wind.png">
+                <img src="wind.png">
                 <div>
                     <p class="wind">15 km/h</p>
                     <p>Wind speed</p>
@@ -64,23 +64,23 @@
            document.querySelector(".wind").innerHTML = data.wind.speed + "km/hr";
             
             if (data.weather[0].main == "Clouds") {
-                weatherIcon.src = "images/clouds.png";
+                weatherIcon.src = "clouds.png";
                 
             }
             else if (data.weather[0].main == "Clear") {
-                weatherIcon.src = "images/clear.png";
+                weatherIcon.src = "clear.png";
                 
             }
             else if (data.weather[0].main == "Rain") {
-                weatherIcon.src = "images/rain.png";
+                weatherIcon.src = "rain.png";
                 
             }
             else if (data.weather[0].main == "Drizzle") {
-                weatherIcon.src = "images/drizzle.png";
+                weatherIcon.src = "drizzle.png";
                 
             }
             else if (data.weather[0].main == "Mist") {
-                weatherIcon.src = "images/mist.png";
+                weatherIcon.src = "mist.png";
                 
             }
 
